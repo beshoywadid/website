@@ -4,9 +4,9 @@
     <meta charset ="utf-8"/>
     <meta name="" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../website 2/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="website 2/images/icon.png">
+    <link rel="icon" href="images/icon.png">
     <title>Dashboard</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <ul>
             <li class="profile">
                 <div class="img-box">
-                    <img src="../website 2/images/user-200x300.webp" alt="profile">
+                    <img src="images/user-200x300.webp" alt="profile">
                 </div>
                 <h2>beshoy</h2>
             </li>
@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#clients">
                     <i class="fas fa-user-group"></i>
                     <p>Clients</p>
                 </a>
@@ -37,19 +37,19 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#charts">
                     <i class="fas fa-chart-pie"></i>
                     <p>Charts</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#comments">
                     <i class="fas fa-pen"></i>
-                    <p>Posts</p>
+                    <p>Comments</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#favorite">
                     <i class="fas fa-star"></i>
                     <p>Favorite</p>
                 </a>
@@ -71,7 +71,7 @@
 
     <div class="content">
         
-        <div class="title-info">
+        <div class="title-info" id="#">
             <p>Dashboard</p>
             <i class="fas fa-chart-bar"></i>
         </div>
@@ -104,6 +104,38 @@
                     <p>Revenue</p>
                     <span>$143</span>
                 </div>
+            </div>
+        </div>
+
+        <div class="title-info" id="clients">
+            <p>Clients</p>
+            <i class="fas fa-user-group"></i>
+        </div>
+
+        <div class="data-info">
+            <div class="box">
+                <li class="profile">
+                    <div class="img-box">
+                        <img src="images/human1.jpg" alt="profile">
+                    </div>
+                    <h2>Richard</h2>
+                </li>
+            </div>
+            <div class="box">
+                <li class="profile">
+                    <div class="img-box">
+                        <img src="images/human2.jpg" alt="profile">
+                    </div>
+                    <h2>Mark</h2>
+                </li>
+            </div>
+            <div class="box">
+                <li class="profile">
+                    <div class="img-box">
+                        <img src="images/human3.jpg" alt="profile">
+                    </div>
+                    <h2>George</h2>
+                </li>
             </div>
         </div>
 
@@ -173,6 +205,62 @@
                 </tr>
             </tbody>
         </table>
+
+        <div class="title-info" id="charts">
+            <p>Charts</p>
+            <i class="fas fa-chart-pie"></i>
+        </div>
+
+        <div class="data-info">
+            <div class="data">
+                <section class="employee-progress">
+                    <div class="employee">
+                        <h2>Richard:</h2>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"> 70% </div>
+                        </div>
+                    </div>
+                    <div class="employee">
+                        <h2>Mark:</h2>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;"> 50% </div>
+                        </div>
+                    </div>
+                    <div class="employee">
+                        <h2>George:</h2>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"> 90% </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="title-info" id="comments">
+            <p>Comments</p>
+            <i class="fas fa-pen"></i>
+        </div>
+
+        <section class="comments">
+            <h2>Leave a Comment</h2>
+            <form action="#comments" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <h2>Comments</h2>
+            <ul class="comment-list"></ul>
+        </section>
+
+        <div class="title-info" id="favorite">
+            <p>Favorite</p>
+            <i class="fas fa-pen"></i>
+        </div>
+
+        
+
     </div>
 </body>
 </html>
